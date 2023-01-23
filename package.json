@@ -1,0 +1,34 @@
+{
+  "name": "food-check",
+  "version": "1.0.0",
+  "description": "This is a food ordering app coding assignment",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drajnish/food-check.git"
+  },
+  "keywords": [
+    "React.js",
+    "food",
+    "javascript",
+    "Namaste React"
+  ],
+  "author": "Rajnish Deshmukh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drajnish/food-check/issues"
+  },
+  "homepage": "https://github.com/drajnish/food-check#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
