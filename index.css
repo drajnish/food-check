@@ -1,4 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700;800&display=swap');
+
+*,
 html {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Merienda', cursive, serif, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #ee9958;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav li {
+  list-style-type: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.card {
+  flex-basis: 250px;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.2rem;
+}
+
+.restaurant-rating {
+  background-color: yellowgreen;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.restaurant-address {
+  font-size: 0.7rem;
+}
+
+.restaurant-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20;
+  padding-top: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ee9958;
+}
+
+.footer > img {
+  width: 50px;
+}
+
+.social-media > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media > ul > li {
+  list-style-type: none;
+}
+
+.social-media > ul > li > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
 }
