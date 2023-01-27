@@ -35,6 +35,30 @@ body {
   cursor: pointer;
 }
 
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.search-input {
+  line-height: 1.5rem;
+  margin-right: 1.4rem;
+  border: 1px solid gray;
+  padding-left: 0.5rem;
+  border-radius: 0.5rem;
+  outline: 1px solid transparent;
+}
+
+.search-button {
+  background-color: #ee9958;
+  padding: 0.3rem 0.8rem;
+  border: 0;
+  border-radius: 1rem;
+  outline: 1px solid transparent;
+}
+
 .card {
   flex-basis: 250px;
   margin-bottom: 2rem;
