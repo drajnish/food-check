@@ -221,8 +221,6 @@ body {
 
 .items {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   width: 50%;
   margin: 1rem auto;
   padding: 2rem 0;
