@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import RestaurantCard from './RestaurantCard';
 import Shimmer from './Shimmer';
+import { Link } from 'react-router-dom';
 
 const filterData = (searchText, restaurants) => {
   return restaurants.filter((restaurant) =>
@@ -50,11 +51,7 @@ const Body = () => {
         </button>
       </div>
       {allRestaurants.length === 0 ? (
-        <div className="shimmer-flex">
-          {[1, 2, 4].map((val) => {
-            return <Shimmer key={val} />;
-          })}
-        </div>
+        <Shimmer />
       ) : (
         <div className="restaurant-list">
           {filteredRestaurants.length === 0 ? (

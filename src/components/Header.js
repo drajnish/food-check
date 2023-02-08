@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import FoodLogo from '../../logo.png';
 
 const Navbar = () => {
@@ -7,10 +8,18 @@ const Navbar = () => {
   return (
     <>
       <ul className="nav">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact Us</li>
-        <li>Cart</li>
+        <Link to="/" className="link">
+          <li>Home</li>
+        </Link>
+        <Link to="/about" className="link">
+          <li>About</li>
+        </Link>
+        <Link to="/contact" className="link">
+          <li>Contact Us</li>
+        </Link>
+        <Link to="/cart" className="link">
+          <li>Cart</li>
+        </Link>
       </ul>
       {isLoggedIn ? (
         <button

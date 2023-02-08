@@ -10,6 +10,11 @@ body {
   font-family: 'Merienda', cursive, serif, sans-serif;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* header */
 
 .header {
@@ -92,7 +97,7 @@ body {
 }
 
 .restaurant-rating {
-  background-color: yellowgreen;
+  background-color: #7dffed;
   padding: 0 0.5rem;
   border-radius: 50%;
 }
@@ -114,6 +119,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .shimmer {
@@ -174,6 +180,57 @@ body {
   }
 }
 
+/* restaurant menu dynamic  */
+
+/* .restaurant-menu {
+  padding: 1rem;
+} */
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  background-color: #fdf4ee;
+  margin-bottom: 1rem;
+}
+
+.menu-header img {
+  width: 400px;
+}
+
+.rest-info {
+  flex: 1;
+  padding-left: 2rem;
+}
+
+.rest-rating {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.rest-rating span:first-child:after {
+  content: ' ';
+  height: 100%;
+  border: 1px solid #f8d6bc;
+  margin: 0 0.5rem;
+  top: 0;
+}
+
+/* .menu {
+
+} */
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.items > img {
+  width: 250px;
+}
+
 /* footer */
 .footer {
   display: flex;
@@ -201,4 +258,48 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 1rem;
+}
+
+/* login form  */
+.login-form {
+  border: 1px solid #ee9958;
+  width: 50%;
+  height: 20rem;
+  margin: 5rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.login-form h1 {
+  margin-bottom: 2rem;
+}
+
+.input-field {
+  margin-bottom: 1rem;
+  height: 4rem;
+}
+
+.input-field > label {
+  display: inline-block;
+  width: 5rem;
+  text-align: left;
+}
+
+.input-field > input {
+  padding: 0.3rem;
+  line-height: 1.2rem;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+}
+
+.input-field > button {
+  padding: 4rem 6rem;
+}
+
+.error {
+  display: block;
+  margin-left: 3rem;
+  margin-top: 0.3rem;
+  color: red;
+  font-size: 0.8rem;
 }
