@@ -215,9 +215,9 @@ body {
   top: 0;
 }
 
-/* .menu {
-
-} */
+.menu > h2 {
+  text-align: center;
+}
 
 .items {
   display: flex;
@@ -225,10 +225,30 @@ body {
   align-items: flex-start;
   width: 50%;
   margin: 1rem auto;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .items > img {
   width: 250px;
+}
+
+.menu-data {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.menu-data > p {
+  font-size: 0.8rem;
+}
+
+.veg {
+  color: green;
+}
+
+.nonveg {
+  color: brown;
 }
 
 /* footer */
