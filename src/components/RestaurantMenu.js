@@ -1,27 +1,14 @@
-import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Shimmer from './Shimmer';
+import useRestaurantMenu from '../utils/useRestaurantMenu';
 import { CDN_IMG_LINK } from '../constants';
 
 import { BiFoodTag } from 'react-icons/bi';
 
 const RestaurantMenu = () => {
-  const [restaurantMenu, setRestaurantMenu] = useState(null);
-
   const { resId } = useParams();
-
-  useEffect(() => {
-    menuapi();
-  }, []);
-
-  async function menuapi() {
-    const resData = await fetch(
-      `https://www.swiggy.com/dapi/menu/v4/full?lat=23.239045&lng=77.435578&menuId=${resId}`
-    );
-    const json = await resData.json();
-    setRestaurantMenu(json.data);
-  }
+  const restaurantMenu = useRestaurantMenu(resId);
 
   return !restaurantMenu ? (
     <Shimmer />

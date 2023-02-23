@@ -1,4 +1,4 @@
-import FoodLogo from '../../logo.png';
+import FoodLogo from '../assets/img/logo.png';
 
 const Footer = () => {
   return (
