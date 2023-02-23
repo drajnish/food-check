@@ -33,7 +33,7 @@ const RestaurantMenu = () => {
             </span>
           </div>
         </div>
-        <Suspense fallback="Loading....">
+        <Suspense fallback="<Shimmer />">
           <MenuItems restaurantMenu={restaurantMenu} />
         </Suspense>
       </div>
