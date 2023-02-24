@@ -14,16 +14,16 @@ const Body = () => {
 
   return (
     <>
-      <div className="search-box">
+      <div className="flex justify-center my-2">
         <input
           type="text"
-          className="search-input"
-          placeholder="search restaurants"
+          className="px-4 focus:outline-transparent py-1 mr-5 rounded-full leading-6 bg-[#eee]"
+          placeholder="Search restaurants"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button
-          className="search-button"
+          className="px-4 bg-[#8ebe43] rounded-full"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
             setFilteredRestaurants(data);

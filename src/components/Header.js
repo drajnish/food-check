@@ -9,24 +9,26 @@ const Navbar = () => {
   const isOnline = useOnline();
   return (
     <>
-      <ul className="nav">
+      <ul className="flex flex-shrink-0">
         <Link to="/" className="link">
-          <li>Home</li>
+          <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Home</li>
         </Link>
         <Link to="/about" className="link">
-          <li>About</li>
+          <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">About</li>
         </Link>
         <Link to="/contact" className="link">
-          <li>Contact Us</li>
+          <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">
+            Contact Us
+          </li>
         </Link>
         <Link to="/cart" className="link">
-          <li>Cart</li>
+          <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Cart</li>
         </Link>
       </ul>
       {!isOnline && <span>Looks like you are offline!</span>}
       {isLoggedIn ? (
         <button
-          className="btn"
+          className="px-2 rounded-md bg-[#fa4242]"
           onClick={() => {
             setIsLoggedIn(false);
           }}
@@ -35,7 +37,7 @@ const Navbar = () => {
         </button>
       ) : (
         <button
-          className="btn"
+          className="px-2 rounded-md bg-[#8ebe43]"
           onClick={() => {
             setIsLoggedIn(true);
           }}
@@ -49,8 +51,8 @@ const Navbar = () => {
 
 const Header = () => {
   return (
-    <div className="header">
-      <img src={FoodLogo} alt="Logo" className="logo" />
+    <div className="flex justify-between items-center px-5 py-2 mb-12 shadow-md">
+      <img src={FoodLogo} alt="Logo" className="w-12" />
       <Navbar />
     </div>
   );
