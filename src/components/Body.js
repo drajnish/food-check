@@ -35,7 +35,7 @@ const Body = () => {
       {allRestaurants.length === 0 ? (
         <Shimmer />
       ) : (
-        <div className="restaurant-list">
+        <div className="flex flex-wrap justify-around px-2 my-10">
           {filteredRestaurants.length === 0 ? (
             <h4 className="nomatch">
               no restaurant found. Try other restaurant.

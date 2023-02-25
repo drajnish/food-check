@@ -9,6 +9,15 @@ module.exports = {
       outline: {
         transparent: '1px solid transparent',
       },
+      keyframes: {
+        heart: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+        },
+      },
+      animation: {
+        heart: 'heart 1s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

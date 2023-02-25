@@ -9,7 +9,7 @@ const Navbar = () => {
   const isOnline = useOnline();
   return (
     <>
-      <ul className="flex flex-shrink-0">
+      <ul className="flex">
         <Link to="/" className="link">
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Home</li>
         </Link>
@@ -25,26 +25,28 @@ const Navbar = () => {
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Cart</li>
         </Link>
       </ul>
-      {!isOnline && <span>Looks like you are offline!</span>}
-      {isLoggedIn ? (
-        <button
-          className="px-2 rounded-md bg-[#fa4242]"
-          onClick={() => {
-            setIsLoggedIn(false);
-          }}
-        >
-          Logout
-        </button>
-      ) : (
-        <button
-          className="px-2 rounded-md bg-[#8ebe43]"
-          onClick={() => {
-            setIsLoggedIn(true);
-          }}
-        >
-          Login
-        </button>
-      )}
+      <div className="basis-24">
+        {isLoggedIn ? (
+          <button
+            className="px-2 rounded-md bg-[#fa4242]"
+            onClick={() => {
+              setIsLoggedIn(false);
+            }}
+          >
+            Logout
+          </button>
+        ) : (
+          <button
+            className="px-2 rounded-md bg-[#8ebe43]"
+            onClick={() => {
+              setIsLoggedIn(true);
+            }}
+          >
+            Login
+          </button>
+        )}
+        {isOnline ? <span>🟢</span> : <span>🔴</span>}
+      </div>
     </>
   );
 };
