@@ -15,7 +15,7 @@ const Footer = () => {
         <br />
         <span>
           Made With{' '}
-          <FaHeart className="inline-block mx-1 animate-[heart_1s_ease-in-out_infinite] fill-rose-500" />{' '}
+          <FaHeart className="inline-block mx-1 animate-heart fill-rose-500" />{' '}
           by Rajnish Deshmukh
         </span>
       </div>

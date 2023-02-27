@@ -4,7 +4,10 @@ export const CDN_IMG_LINK =
 export const API_RESTAURANT_MENU =
   'https://www.swiggy.com/dapi/menu/v4/full?lat=23.239045&lng=77.435578&menuId=';
 
-export const API_RESTAURANTS = 'https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.239045&lng=77.435578&page_type=DESKTOP_WEB_LISTING'
+export const API_RESTAURANTS =
+  'https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.239045&lng=77.435578&page_type=DESKTOP_WEB_LISTING';
+
+export const API_GITHUB = 'https://api.github.com/users/drajnish';
 
 export const restaurantList = [
   {
