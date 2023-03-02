@@ -5,8 +5,8 @@ const About = () => {
     <div className="flex justify-between mb-20">
       <Profile />
       <div className="w-2/3">
-        <div>
-          <h1 className="font-bold text-3xl">Kalp Bhojanam</h1>
+        <h1 className="text-3xl">Kalp Bhojanam</h1>
+        <div className="text-[#3e4152]">
           <p>
             Kalp Bhojanam : As we all know Kalpavriksha fullfills all our wishes
             instantly, Same way Kalp Bhojanam fullfills all your wishes about
@@ -30,8 +30,8 @@ const About = () => {
             distinctio maxime omnis officiis pariatur inventore eos eius!
           </p>
         </div>
-        <div className="mt-5">
-          <h2 className="text-2xl font-bold">Tech Used: </h2>
+        <h2 className="mt-5 text-2xl">Tech Used: </h2>
+        <div className="text-[#3e4152]">
           <p>React.js | </p>
         </div>
       </div>

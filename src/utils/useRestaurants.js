@@ -13,8 +13,8 @@ const useRestaurants = () => {
     const data = await fetch(API_RESTAURANTS);
 
     const json = await data.json();
-    setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-    setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    setAllRestaurants(json?.data?.cards[0]?.data?.data?.cards);
+    setFilteredRestaurants(json?.data?.cards[0]?.data?.data?.cards);
   }
 
   return [allRestaurants, filteredRestaurants, setFilteredRestaurants];

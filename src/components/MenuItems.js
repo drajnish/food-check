@@ -3,7 +3,6 @@ import { BiFoodTag } from 'react-icons/bi';
 import MenuWidgets from './MenuWidgets';
 
 const MenuItems = ({ restaurantMenu }) => {
-  console.log(restaurantMenu);
   return (
     <div className="flex justify-between pt-12">
       <MenuWidgets widgets={restaurantMenu?.menu?.widgets} />

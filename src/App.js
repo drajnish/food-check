@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import RestaurantMenu from './components/RestaurantMenu';
 import Registration from './components/Registration';
+import Cart from './components/Cart';
 import Login from './components/Login';
 import Footer from './components/Footer';
 
@@ -45,6 +46,10 @@ const appRouter = createBrowserRouter([
       {
         path: '/login',
         element: <Login />,
+      },
+      {
+        path: '/cart',
+        element: <Cart />,
       },
     ],
   },

@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <ul className="flex">
-        <Link to="/" className="link">
+        <Link to="/">
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Home</li>
         </Link>
         <Link to="/about" className="link">
@@ -54,7 +54,9 @@ const Navbar = () => {
 const Header = () => {
   return (
     <div className="flex justify-between items-center px-5 py-2 mb-12 shadow-md">
-      <img src={FoodLogo} alt="Logo" className="w-12" />
+      <Link to="/">
+        <img src={FoodLogo} alt="Logo" className="w-12" />
+      </Link>
       <Navbar />
     </div>
   );
