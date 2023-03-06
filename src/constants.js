@@ -9,6 +9,8 @@ export const API_RESTAURANTS =
 
 export const API_GITHUB = 'https://api.github.com/users/drajnish';
 
+export const API_FAQ = 'https://www.swiggy.com/dapi/support/issues/faq?';
+
 export const restaurantList = [
   {
     type: 'restaurant',

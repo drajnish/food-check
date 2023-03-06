@@ -28,7 +28,6 @@ const RestaurantCard = ({
           </div>
         </div>
         <div className="flex justify-between text-xs mt-2">
-          {/* {(bgColour = avgRating >= 4 ? bg-[#48c479] : bg-[#db7c38])} */}
           <div
             className={`flex items-center px-2 py-1 ${
               avgRating >= 4 ? 'bg-[#48c479]' : 'bg-[#db7c38]'

@@ -5,6 +5,7 @@ import Shimmer from './Shimmer';
 import useRestaurantMenu from '../utils/useRestaurantMenu';
 import { CDN_IMG_LINK } from '../constants';
 import { BsStarFill } from 'react-icons/bs';
+import MenuWidgets from './MenuWidgets';
 
 const MenuItems = lazy(() => import('./MenuItems'));
 
@@ -44,7 +45,14 @@ const RestaurantMenu = () => {
         </div>
       </div>
       <Suspense fallback="<Shimmer />">
-        <MenuItems restaurantMenu={restaurantMenu} />
+        <div className="flex justify-between pt-12">
+          <MenuWidgets widgets={restaurantMenu?.menu?.widgets} />
+          <div className="w-9/12 pl-12">
+            {Object.values(restaurantMenu?.menu?.items).map((item) => (
+              <MenuItems key={item.id} item={item} />
+            ))}
+          </div>
+        </div>
       </Suspense>
     </>
   );

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import FoodLogo from '../assets/img/logo.png';
 import useOnline from '../utils/useOnline';
 
@@ -13,13 +14,16 @@ const Navbar = () => {
         <Link to="/">
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Home</li>
         </Link>
-        <Link to="/about" className="link">
+        <Link to="/about">
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">About</li>
         </Link>
-        <Link to="/contact" className="link">
+        <Link to="/contact">
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">
             Contact Us
           </li>
+        </Link>
+        <Link to="/faq">
+          <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Faq's</li>
         </Link>
         <Link to="/cart" className="link">
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Cart</li>

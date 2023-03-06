@@ -18,7 +18,6 @@ class Profile extends React.Component {
     this.setState({
       userInfo: data,
     });
-    console.log(data);
   }
 
   render() {
