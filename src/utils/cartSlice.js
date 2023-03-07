@@ -4,10 +4,17 @@ const cartSlice = createSlice({
   name: 'cartSlice',
   initialState: {
     items: [],
+    totalItemsCount: 0,
   },
   reducers: {
     addItem: (state, action) => {
-      state.items.push(action.payload);
+      const item = state.items[action.payload.id];
+      const quantity =
+        item && item.hasOwnProperty('quantity')
+          ? state.items[action.payload.id]?.quantity + 1
+          : 1;
+      state.items[action.payload.id] = { ...action.payload, quantity };
+      state.totalItemsCount = state.totalItemsCount + 1;
     },
     removeItem: (state, action) => {
       state.items.pop(action.payload);

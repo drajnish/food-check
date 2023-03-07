@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const isOnline = useOnline();
 
-  const cartItems = useSelector((store) => store.cart.items);
+  const cartItems = useSelector((store) => store.cart.totalItemsCount);
 
   return (
     <>
@@ -30,7 +30,8 @@ const Navbar = () => {
         </Link>
         <Link to="/cart" className="link">
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">
-            Cart - {cartItems.length}
+            Cart{' '}
+            <span className="text-[#fa4242]">{cartItems ? cartItems : 0}</span>
           </li>
         </Link>
       </ul>
