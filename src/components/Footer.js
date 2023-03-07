@@ -8,7 +8,7 @@ import { FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className="flex justify-between items-center px-8 bg-slate-900 text-cyan-50 shadow-lg pt-12 pb-6">
+    <div className="flex justify-between items-center px-8 pt-12 pb-6 bg-slate-900 text-cyan-50 shadow-lg">
       <img src={FoodLogo} alt="logo" className="w-12" />
       <div className="text-center">
         <span>&#169; 2023 Good Food</span>

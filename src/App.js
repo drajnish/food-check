@@ -13,13 +13,18 @@ import Cart from './components/Cart';
 import Login from './components/Login';
 import Footer from './components/Footer';
 
+import { Provider } from 'react-redux';
+import store from './utils/store';
+
 const AppLayout = () => {
   return (
-    <div className="font-Merienda">
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div className="font-Merienda">
+        <Header />
+        <Outlet />
+        <Footer />
+      </div>
+    </Provider>
   );
 };
 

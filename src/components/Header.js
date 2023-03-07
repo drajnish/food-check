@@ -8,6 +8,9 @@ const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const isOnline = useOnline();
+
+  const cartItems = useSelector((store) => store.cart.items);
+
   return (
     <>
       <ul className="flex">
@@ -26,7 +29,9 @@ const Navbar = () => {
           <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Faq's</li>
         </Link>
         <Link to="/cart" className="link">
-          <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">Cart</li>
+          <li className="px-2 py-1 rounded-md hover:bg-[#8ebe43]">
+            Cart - {cartItems.length}
+          </li>
         </Link>
       </ul>
       <div className="basis-24">

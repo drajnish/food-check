@@ -1,7 +1,16 @@
 import { CDN_IMG_LINK } from '../constants';
 import { BiFoodTag } from 'react-icons/bi';
 
+import { useDispatch } from 'react-redux';
+import { addItem } from '../utils/cartSlice';
+
 const MenuItems = ({ item }) => {
+  const dispatch = useDispatch();
+
+  const addFoodItem = (item) => {
+    dispatch(addItem(item));
+  };
+
   return (
     <div
       id={item?.id}
@@ -17,7 +26,12 @@ const MenuItems = ({ item }) => {
             />
           </div>
         )}
-        <button className="px-4 py-2 border text-[#60b246]">ADD +</button>
+        <button
+          className="px-4 py-2 border text-[#60b246]"
+          onClick={() => addFoodItem(item)}
+        >
+          ADD +
+        </button>
       </div>
 
       <div className="text-[#3e4152] text-xl p-1">
@@ -25,7 +39,7 @@ const MenuItems = ({ item }) => {
           <span>
             <BiFoodTag
               className={`${item?.isVeg ? 'fill-[#0f8a65]' : 'fill-[#e43b4f]'}`}
-            />{' '}
+            />
             <h3>{item.name}</h3>
           </span>
           <span>
