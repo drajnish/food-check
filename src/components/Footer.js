@@ -23,17 +23,20 @@ const Footer = () => {
       <div className="basis-28">
         <ul className="flex justify-between">
           <li>
-            <Link to="https://www.linkedin.com/in/rajnish-deshmukh-12745a149/">
+            <Link
+              to="https://www.linkedin.com/in/rajnish-deshmukh-12745a149/"
+              target="_blank"
+            >
               <FaLinkedin size={24} />
             </Link>
           </li>
           <li>
-            <Link to="https://github.com/drajnish">
+            <Link to="https://github.com/drajnish" target="_blank">
               <FaGithub size={24} />
             </Link>
           </li>
           <li>
-            <Link to="https://twitter.com/DeshmukhRajnish">
+            <Link to="https://twitter.com/DeshmukhRajnish" target="_blank">
               <FaTwitter size={24} className="hover:size-[48]" />
             </Link>
           </li>
